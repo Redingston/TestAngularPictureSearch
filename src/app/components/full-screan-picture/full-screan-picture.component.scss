@@ -1,0 +1,36 @@
+@import 'src/vars.scss';
+
+:host {
+  display: grid;
+  grid-gap: 5rem;
+  position: relative;
+  
+  .pic{
+    // justify-content: stretch;
+    margin: 1rem;
+    margin-top: 3rem;
+    top: 3rem;
+   
+  }
+  .back-link {
+    position: absolute;
+    top: 1rem;
+    left: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .875rem;
+    color: #777777;
+    transition: $transition;
+
+    .arrow-back {
+      position: absolute;
+      top: -0.05rem;
+      left: -0.5rem;
+      color: inherit;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

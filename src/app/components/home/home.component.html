@@ -1,0 +1,9 @@
+<app-header (per_page)="setCount($event)" (searchString)="search($event)"></app-header>
+
+<div *ngIf="isError" class="error"> There are no images that suits your criteria 
+</div>
+
+<app-pictures-list [pictures]="pictures" class="pictures"></app-pictures-list>
+
+
+<router-outlet></router-outlet>

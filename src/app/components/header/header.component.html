@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <div class="inputs">
+    <app-form-field  *ngFor="let field of fields"
+    [field]="field"
+    [formControlName]="field.name"></app-form-field>
+ </div>
+</form>
+<div class="counts">
+    <form [formGroup]="form" class="form-count">
+        <mat-label class="label">Enter the number of photos to display</mat-label>   
+        <mat-form-field appearance="fill">
+          <mat-select formControlName="count" class="select-count" >
+            <mat-option *ngFor="let number of numbers" [value]="number">
+              {{number}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </form>
+</div>

@@ -1,0 +1,43 @@
+:host{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	padding: 1rem;
+	position: relative;
+	align-self: start;
+  
+  .inputs {
+    grid-column-start: inherit;
+    display: grid;
+		grid-gap: 1rem;
+    align-self: start;
+    z-index: 1;
+    .search {
+      align-items: center;
+    }
+  
+    .form-field {
+      width: 200px;
+      font-size: 1.25rem;
+    }
+    input {
+      font-size: 1.5rem;
+    }
+  }
+  .counts {
+    display: grid;
+		grid-gap: 1rem;
+    align-self: start;
+    z-index: 1;
+
+    .example-additional-selection {
+      opacity: 0.75;
+      font-size: 0.75em;
+    }
+    
+    .label{
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "src/vars";
+:host{
+    display: grid;
+    grid-template-rows: auto 30px 1fr;
+  
+    .error{
+        display: block;
+        font-size: large;
+        color: $red;
+    }
+    .pictures{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+  
+  
+  
